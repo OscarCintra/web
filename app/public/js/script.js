@@ -29,7 +29,7 @@ document.getElementById("btn-inserir").onclick = function(){
 	}
 
 	
-	xhr.open("POST", "https://repp1.herokuapp.com/api");
+	xhr.open("POST", "https://ocapi.herokuapp.com/api");
 	xhr.send(formData);		
 		
 }
@@ -69,7 +69,7 @@ document.getElementById("btn-alterar").onclick = function(){
 		}
 	}
 
-	xhr.open("PUT", "https://repp1.herokuapp.com/api/" + id_cliente);
+	xhr.open("PUT", "https://ocapi.herokuapp.com/api/" + id_cliente);
 	xhr.send(formData);			
 		
 }
@@ -93,7 +93,7 @@ document.getElementById("btn-excluir").onclick = function(){
 		}
 	}
 
-	xhr.open("DELETE", "https://repp1.herokuapp.com/api/" + id_cliente);
+	xhr.open("DELETE", "https://ocapi.herokuapp.com/api/" + id_cliente);
 	xhr.send();					
 	
 }
@@ -130,7 +130,7 @@ function Localizar(){
 		}
 	}
 
-	xhr.open("GET", "https://repp1.herokuapp.com/api/" + id_cliente);
+	xhr.open("GET", "https://ocapi.herokuapp.com/api/" + id_cliente);
 	xhr.send();		
 }
 
