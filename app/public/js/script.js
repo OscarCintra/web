@@ -89,6 +89,7 @@ document.getElementById("btn-excluir").onclick = function(){
 		if(xhr.readyState == 4){
 			var resposta = xhr.responseText;
 			document.getElementById('mensagem').innerHTML = resposta;
+			document.getElementById("id_cliente").value = "";
 			Localizar();
 		}
 	}
